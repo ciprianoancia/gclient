@@ -158,7 +158,10 @@
       $spid = $this -> spreadsheetID;
       return $sheets;
     }
-    
+  
+    /**
+     * @return string
+     */
     function applicationName()
     
     {
@@ -337,6 +340,22 @@
     }
     
     /**
+     * @return mixed
+     */
+    public function getSpreadsheetID()
+    {
+      return $this -> spreadsheetID;
+    }
+    
+    /**
+     * @param mixed $spreadsheetID
+     */
+    public function setSpreadsheetID($spreadsheetID)
+    {
+      $this -> spreadsheetID = $spreadsheetID;
+    }
+    
+    /**
      * @var
      */
     public $sheetName;
@@ -360,8 +379,19 @@
      *
      */
     public $startrow;
-    
+  
+    /**
+     * @var
+     */
     public $startCol;
-    
+  
+    /**
+     * @var
+     */
+    public $spreadsheetID;
+  
+    /**
+     * @var
+     */
     public $ApplicationName;
   }
