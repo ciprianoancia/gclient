@@ -1,2 +1,2 @@
 # gclient
-Gclient PHP API
+Google spreadsheets PHP API
