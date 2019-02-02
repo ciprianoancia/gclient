@@ -1,0 +1,13 @@
+{
+    "name": "ciprianoancia/gclient",
+    "authors": [
+        {
+            "name": "Ciprian Oancia",
+            "email": "ciprian.oancia@acquia.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "google/apiclient": "^2.0@dev"
+    }
+}
