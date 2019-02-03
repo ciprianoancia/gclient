@@ -31,7 +31,7 @@ You need the following prerequisites:
 Once you have your data array ready, you can use the above code to upload it:
 The array is expected to be 1 level deep, each rown must have the same amount of values. 
 
-Example of expected payload:
+Example of expected input:
 
 ````
     // example of header if you need to write it
@@ -60,19 +60,25 @@ Example of expected payload:
 ````
     //intialise
     $upload = new \GSpreadSheets();
+
     //your Spreadsheet ID
     $upload -> setSpreadsheetID('your_spreadsheet_id');
+
     //your Sheet name you are writing too.
     $upload -> setSheetName('your_sheet_name');
+
     //Path to your Credentials
     $upload -> setAuthConfig('GAcredentials-some-hash.json');
+
     //if you don't want to write on A1 but starting B2
     $upload ->setStartCol('B');
     $upload ->setStartrow("2");
+
     //The loader will: 
     //  - Empty your keys if any 
     //  - If any empty fields it will fill in with "null" to avoid API errors.
     $upload -> load($data);
+
     //upload itself ;)
     $upload -> upload();
 ````
