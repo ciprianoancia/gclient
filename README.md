@@ -26,6 +26,7 @@ You need the following prerequisites:
 - For Key type, choose JSON (the default) and download the file. This file contains a *private key* so be very careful with it, it is your credentials after all
 - Finally, edit the sharing permissions for the spreadsheet you want to access and share *EDIT* access to the 'client_email' address you can find in the JSON file.
 - Git clone this class.
+- Run "composer update"
 - Include *GSpreadSheets.php* in your own PHP script.
 - See the below tutorial
 - Have FUN!
