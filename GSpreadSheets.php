@@ -142,7 +142,7 @@
       */
       
       $client = new \Google_Client();
-      $client -> setApplicationName('AUDIT2Spreadsheet');
+      $client -> setApplicationName($this -> ApplicationName);
       $client -> setScopes(Google_Service_Sheets::SPREADSHEETS);
       $client -> setAccessType('offline');
       $client -> setAuthConfig($this -> authConfig);
