@@ -1,5 +1,5 @@
 # Google Spreadsheets Helper 
-- An PHP Class adapted to work by default with ACSF environment variables but it's not platform dependent.
+- This is a PHP Class adapted to work by default with ACSF environment variables but it's not platform dependent.
 
 Inspired from https://www.fillup.io/post/read-and-write-google-sheets-from-php/
 The above tutorial is mostly for reading spreadsheets, our tool is dedicated to writing spreadsheets. 
@@ -25,15 +25,18 @@ You need the following prerequisites:
 - For Role I selected Project -> Service Account Actor
 - For Key type, choose JSON (the default) and download the file. This file contains a private key so be very careful with it, it is your credentials after all
 - Finally, edit the sharing permissions for the spreadsheet you want to access and share either View (if you only want to read the file) or Edit (if you need read/write) access to the client_email' address you can find in the JSON file.
+- Git clone this class.
+- Add your own PHP file and include *GSpreadSheets.php*
  
 ## Usage 
 
 Once you have your data array ready, you can use the above code to upload it:
 The array is expected to be 1 level deep, each rown must have the same amount of values. 
 
-Example of expected input:
+#### Example of expected input:
 
 ````
+
     // example of header if you need to write it
      $data[] = [
         'Account',
@@ -41,6 +44,7 @@ Example of expected input:
         'Domain',
         'Expiry',
       ];
+
       //example of row 1
       $data[] = [
         'Account-D8SUD80',
@@ -48,6 +52,7 @@ Example of expected input:
         'domain.com',
         '02/03/2020',
         ];
+
       //example of row 2
       $data[] = [
         'Account-DYJSU90',
@@ -56,6 +61,8 @@ Example of expected input:
         '02/03/2020',
       ];
 ````
+
+#### Example of code to use this Class with.
 
 ````
     //intialise
