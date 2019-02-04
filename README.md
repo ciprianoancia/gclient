@@ -94,6 +94,7 @@ The array is expected to be 1 level deep, each rown must have the same amount of
 ````
 
 Please report any bugs that you encounter or help improving this ;)
+
 Many thanks,
 
 Ciprian.
