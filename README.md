@@ -82,7 +82,7 @@ The array is expected to be 1 level deep, each rown must have the same amount of
 
     //if you don't want to write on A1 but starting B2
     $upload ->setStartCol('B');
-    $upload ->setStartrow("2");
+    $upload ->setStartrow('2');
 
     //The loader will: 
     //  - Empty your keys if any 
