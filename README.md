@@ -1,5 +1,4 @@
 # Google Spreadsheets Helper 
-- This is a PHP Class adapted to work by default with ACSF environment variables but it's not platform dependent.
 
 Inspired from https://www.fillup.io/post/read-and-write-google-sheets-from-php/
 The above tutorial is mostly for reading spreadsheets, our tool is dedicated to writing spreadsheets. 
