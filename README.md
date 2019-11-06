@@ -37,7 +37,7 @@ The array is expected to be 1 level deep, each rown must have the same amount of
 
 ````
 
-    // example of header if you need to write it
+    // example of header if you need to write it. The collumns count must match in all your rows.
      $data[] = [
         'Account',
         'Owner',
@@ -82,8 +82,9 @@ The array is expected to be 1 level deep, each rown must have the same amount of
     $upload ->setStartrow('2');
 
     //The loader will: 
-    //  - Empty your keys if any 
-    //  - If any empty fields it will fill in with "null" to avoid API errors.
+    //  - Reset your array keys 
+    //  - If there are any empty fields it will fill in with "null" to avoid API errors.
+    //  - Handle some validations of your array before uploading it.
     $upload -> load($data);
 
     //upload itself ;)
