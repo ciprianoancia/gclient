@@ -3,8 +3,6 @@
 Inspired from https://www.fillup.io/post/read-and-write-google-sheets-from-php/
 The above tutorial is mostly for reading spreadsheets, our tool is dedicated to reading and writing to spreadsheets. 
 
-It can be used as an example to setup your own scripts or you can use thisone to save your time.
-
 By default Google uses Oauth, we want our automatic ways to write to Spreadsheets, you will find below the way to setup and have it work.
 
 ## Prerequisites
