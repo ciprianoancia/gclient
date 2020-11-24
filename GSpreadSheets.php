@@ -28,6 +28,8 @@
      */
     protected function prepareData($data)
     {
+      
+      //Ensure fields are not empty
       if (!isset($this -> body))
       {
 
@@ -58,6 +60,8 @@
     function applicationName()
 
     {
+      
+      //Google spreadsheets requirements
       if (!$this -> ApplicationName)
       {
         $this -> ApplicationName = 'Audit2Spreadsheets';
@@ -97,7 +101,7 @@
     public function Range()
     {
    
-      
+      //Initialise default rows/collumns
       $this -> startRow();
       $this -> startCol();
 
@@ -127,7 +131,7 @@
         }
     
     }
-  public $pullendRow;
+    public $pullendRow;
     /**
      * @return mixed
      */
