@@ -101,9 +101,6 @@
       $this -> startRow();
       $this -> startCol();
 
-      //if (!$this -> range)
-     // {
-
         $alphabet = range('A', 'Z');
   
         if ($this -> body)
@@ -128,7 +125,6 @@
           $this -> range = $this -> sheetName . '!A' . $this -> pullstartRow . ':Z' . $this -> pullendRow;
   
         }
-    //  }
     
     }
   public $pullendRow;
@@ -478,11 +474,12 @@
     /**
      * @var
      */
-    public    $ApplicationName;
+    public $ApplicationName;
     
     public $range;
     
     protected $client;
     
     public $body;
+    
   }
