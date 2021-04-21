@@ -360,17 +360,17 @@
     /**
      * @return mixed
      */
-    public function getStartrow()
+    public function getStartRow()
     {
-      return $this -> startrow;
+      return $this -> startRow;
     }
 
     /**
-     * @param mixed $startrow
+     * @param mixed $startRow
      */
-    public function setStartrow($startrow)
+    public function setStartRow($startRow)
     {
-      $this -> startrow = $startrow;
+      $this -> startRow = $startRow;
     }
 
     /**
@@ -463,7 +463,7 @@
     /**
      *
      */
-    public $startrow;
+    public $startRow;
 
     /**
      * @var
